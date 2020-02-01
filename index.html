@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <div class="wrapper">
+        <h1>Hangman</h1>
+      </div>
+    </div>
+    <div class="letters-hangman">
+      <div id="word"></div>
+      <div>
+        <p id="wrong-letters"></p>
+        <svg height="100" width="200" id="svg-hangman">
+          <line
+            x1="0"
+            y1="100"
+            x2="500"
+            y2="100"
+            style="stroke:#191308;stroke-width:4"
+          ></line>
+          <line
+            x1="100"
+            y1="100"
+            x2="100"
+            y2="0"
+            style="stroke:#191308;stroke-width:4"
+          ></line>
+          <line
+            x1="125"
+            y1="0"
+            x2="100"
+            y2="0"
+            style="stroke:#191308;stroke-width:4"
+          ></line>
+          <line
+            x1="125"
+            y1="20"
+            x2="125"
+            y2="0"
+            style="stroke:#191308;stroke-width:4"
+          ></line>
+          <circle
+            cx="125"
+            cy="20"
+            r="10"
+            stroke="red"
+            stroke-width="1"
+            fill="#bbbbbb"
+            class="head"
+          />
+          <line x1="125" y1="63" x2="125" y2="30" class="body"></line>
+          <line x1="110" y1="30" x2="125" y2="40" class="left-arm"></line>
+          <line x1="140" y1="30" x2="125" y2="40" class="right-arm"></line>
+          <line x1="125" y1="60" x2="140" y2="70" class="left-leg"></line>
+          <line x1="115" y1="73" x2="125" y2="60" class="right-leg"></line>
+        </svg>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
